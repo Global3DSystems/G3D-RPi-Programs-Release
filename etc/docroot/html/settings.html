@@ -1,0 +1,107 @@
+<div class="row h-100">
+
+    <div class="col my-auto text-center">
+
+        <div class="container">
+
+            <br>
+            <h1>Settings Menu</h1>
+            
+            <div class="row settings-box">
+                <div class="col-md settings-sub-box">
+        
+
+                    <div class="contents align-self-center"> 
+                        <figure class="image-control-item" >
+
+                            <img src="/images/settings_page/g3d.png"  alt="g3d-logo" style="height: 50%;
+                            width: 50%;"/>
+        
+                        </figure>
+
+                        <p>G3D T2000 OS</p>
+                        <p>Version {version}</p>
+                
+                
+
+                    </div>
+                    
+                    <hr class="mt-2 mb-3"/>
+
+                    <div class="printer-name">
+
+                        <form action="/settings" method="POST">
+                            <p>Printer Name</p>
+        
+                            <label for="name" style="display: inline-block;
+                                width:100px;
+                                text-align: right;">Name: </label>
+                            <input type="text" id="printer-name" name="printer-name" minlength="8" value="{printer_name}" style="background: white; color: black;"><br><br>
+        
+                              
+                             <input type="submit" id="printer-name-btn" name="printer-name-btn" class="printer-name-btn" value="Update">
+                            
+                            </form>
+                      </div>
+                    
+                </div>
+
+                <div class="col-md settings-sub-box">
+                    <div class="edit-ssid">
+    
+                        
+                        <form action="/settings" method="POST">
+                        <p>Edit/Update Hotspot</p>
+
+                        <label for="name" style="display: inline-block;
+                            width:100px;
+                            text-align: right;">SSID: </label>
+                        <input type="text" id="hotspot-ssid" name="hotspot-ssid" minlength="8" required value="{hotspot_ssid}" style="background: white; color: black;"><br><br>
+    
+                        <label for="name" style="display: inline-block;
+                            width:100px;
+                            text-align: right;">Password: </label>
+                        <input type="text" id="hotspot-pass" name="hotspot-pass"  minlength="8" required value="{hotspot_pass}" style="background: white; color: black;"><br><br>
+    
+                         <input hidden type="submit" id="connect-hotspot-btn-hidden" name="update-ssid-btn-hidden" class="update-ssid-btn-hidden" value="UPDATE HOTSPOT">
+                         <input type="submit" id="connect-hotspot-btn" name="update-ssid-btn" class="update-ssid-btn" value="UPDATE HOTSPOT">
+                        
+                        </form>
+
+                    </div>
+
+                    <hr class="mt-2 mb-3"/>
+                
+                    <div class="connect-wifi">
+                        
+                        <form action="/settings" method="POST">
+                        <p>Connect to Wi-Fi</p>
+    
+                        <label for="name" style="display: inline-block;
+                            width:100px;
+                            text-align: right;">SSID: </label>
+                        <input type="text" id="wifi-ssid" name="wifi-ssid" minlength="8" required value="{wifi_ssid}" style="background: white; color: black;"><br><br>
+    
+                        <label for="name" style="display: inline-block;
+                            width:100px;
+                            text-align: right;">Password: </label>
+                            
+                        <input type="text" id="wifi-pass" name="wifi-pass"  minlength="8" value="{wifi_pass}" required style="background: white; color: black;"><br><br>
+    
+                         <input hidden type="submit" id="connect-wifi-btn-hidden" name="connect-wifi-btn-hidden" class="connect-wifi-btn-hidden" value="CONNECT WI-FI">
+                         <input type="submit" id="connect-wifi-btn" name="connect-wifi-btn" class="connect-wifi-btn" value="CONNECT WI-FI">
+                        
+                        </form>
+                    </div>
+                  </div>
+
+                  
+            </div>
+
+            
+        </div>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,69 @@
+<div class="row h-100">
+
+    <div class="col my-auto text-center">
+
+
+        <div class="container">
+
+            <br>
+            <h1>Printing {print_status}</h1>
+
+            <div class="row printing-box">
+                <div class="col-sm-3 printing-sub-box">
+                    <div id="loader">
+                        <canvas id="circularLoader" width="200" height="200"></canvas>
+                    </div>
+            </div>
+
+                <div class="col-md printing-sub-box">
+                    <figure class="image-printing-item">
+                        <img id="current-image-path" src="" style="max-width: 100%;
+                        height: auto;" alt=""/>
+                        <figcaption class="image-printing-item-caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="row printing-box">
+
+                <div class="col-md printing-sub-box">
+                    <label for="name">Name:</label>
+                    <input type="text" id="printing-name" name="name" value="{name}" readonly><br><br>
+        
+                    <label for="current-layer">Current Layer: </label>
+                    <input type="text" id="printing-current-layer" name="current-layer" value="{current-layer}" readonly><br><br>
+        
+                    <label for="remaining-time">Remaining Time: </label>
+                    <input type="text" id="printing-remaining-time" name="remaining-time" value="{remaining-time}" readonly><br><br>
+                </div>
+            </div>
+
+            <div class="row printing-box" style="float: right;">
+                    <form action="/printing" method="POST">
+                        <input type="submit" method="post" id="print-pause-btn" name="print-pause-btn" value="PAUSE/RESUME" onclick="pause_resume_clicked()">
+                        <input type="submit" method="post" id="print-abort-btn "name="print-abort-btn" value="ABORT" onclick="abort_clicked()">
+                    </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    // Pause and resume and abort are automatically handled in .cpp.
+    // We only need to show messageboxes so user have an 
+    // info what to expect.
+
+    function abort_clicked()
+    {
+        alert("Current layer will be finished before it will it abort the print.")
+    }
+
+    function pause_resume_clicked()
+    {
+        alert("Current layer will be finished before it will it pause/resume the print.")
+    }
+
+
+</script>
