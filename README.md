@@ -11,8 +11,8 @@ printer via USB update or over the air update.
 section of this page then selecting "Download zip".
 * Format your flash drive as either FAT or exFAT. We haven't tested yet other file systems.
 * Copy the file in the root of the flash drive. 
-* Do not rename the filename.It must be exactly "G3DT2000-RPi-Programs-Release-master.zip". If you downloaded this multiple times,
-it may appear as "G3DT2000-RPi-Programs-Release-master.zip(1)". File name must be exactly "G3DT2000-RPi-Programs-Release-master.zip" only.
+* Do not rename the filename.It must be exactly "G3D-RPi-Programs-Release-master.zip". If you downloaded this multiple times,
+it may appear as "G3D-RPi-Programs-Release-master.zip(1)". File name must be exactly "G3D-RPi-Programs-Release-master.zip" only.
 * Insert the flash drive in the printer.
 * Restart the printer.
 * A prompt will be shown in the touch screen, select it will scan the version and you may choose to update via the latest version or downgrade it.
