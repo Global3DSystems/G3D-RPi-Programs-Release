@@ -445,6 +445,13 @@ canvas {
     max-width: 100%;
     height: auto;
   }
+  @media screen and (max-width: 640px){
+    .header-logo img {
+    width:50%!important;
+    margin:auto;
+    padding:auto;
+    }
+    }
   
   .header-logo h1 {
     position: relative;

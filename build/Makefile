@@ -1424,7 +1424,13 @@ networkconfiguration.o: ../networkconfiguration.cpp ../networkconfiguration.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o networkconfiguration.o ../networkconfiguration.cpp
 
 printerserial.o: ../printerserial.cpp ../printerserial.h \
-		../readwriteconfig.h
+		../readwriteconfig.h \
+		../mainwindow.h \
+		../colortheme.h \
+		../usb.h \
+		../printinfoslice.h \
+		../projectionwindow.h \
+		../networkconfiguration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o printerserial.o ../printerserial.cpp
 
 printinfocontroller.o: ../printinfocontroller.cpp ../printinfocontroller.h \
