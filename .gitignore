@@ -10,4 +10,3 @@ build/resources/web_upload/*.g3d
 build/resources/images/mini_projection/*.png
 build/resources/temp_files/*.png
 *.user
-build/resources/thumbnail/image/*.png
