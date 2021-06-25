@@ -1,6 +1,3 @@
-PLDito
-GlobeAtHome_A4DA4
+OCAMPO
 ZTE_2.4G_vzf4J4
 WorkWiFi
-ZTE_5G_vzf4J4
-Gors Unlimited

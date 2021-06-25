@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>16000</width>
-    <height>480</height>
+    <height>1000</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -681,7 +681,7 @@ background-color: rgb(141, 198, 63);
        <x>100</x>
        <y>90</y>
        <width>591</width>
-       <height>141</height>
+       <height>111</height>
       </rect>
      </property>
      <property name="font">
@@ -788,6 +788,12 @@ background-color: rgb(141, 198, 63);
        <width>45</width>
        <height>45</height>
       </size>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
      </property>
     </widget>
     <widget class="QLabel" name="title_lbl">
@@ -2467,7 +2473,7 @@ color: rgb(255, 255, 255);
     <property name="geometry">
      <rect>
       <x>7200</x>
-      <y>130</y>
+      <y>140</y>
       <width>800</width>
       <height>211</height>
      </rect>
@@ -3788,6 +3794,7 @@ Printer will reboot upon clicking the button.</string>
       <property name="font">
        <font>
         <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
       <property name="focusPolicy">
@@ -3842,7 +3849,7 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>Proxima Nova</family>
-        <pointsize>11</pointsize>
+        <pointsize>14</pointsize>
        </font>
       </property>
       <property name="focusPolicy">
@@ -3864,6 +3871,7 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -3888,6 +3896,7 @@ QGroupBox::title {
       <property name="font">
        <font>
         <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -4680,7 +4689,7 @@ color: rgb(245, 245, 245);
        <x>10</x>
        <y>170</y>
        <width>781</width>
-       <height>291</height>
+       <height>301</height>
       </rect>
      </property>
      <property name="font">
@@ -5270,8 +5279,8 @@ color: rgb(245, 245, 245);
       <rect>
        <x>10</x>
        <y>170</y>
-       <width>774</width>
-       <height>275</height>
+       <width>781</width>
+       <height>301</height>
       </rect>
      </property>
      <property name="font">
@@ -6871,6 +6880,9 @@ color: rgb(0,0,0);</string>
         <height>45</height>
        </size>
       </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="image_widget" native="true">
@@ -7326,7 +7338,7 @@ border-radius: 10px 0px 10px 0px;</string>
          <string notr="true">color: rgb(41, 145, 208);</string>
         </property>
         <property name="text">
-         <string>FULL</string>
+         <string>GRID</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -7380,7 +7392,7 @@ border-radius: 10px 0px 10px 0px;</string>
          <string notr="true">color: rgb(41, 145, 208);</string>
         </property>
         <property name="text">
-         <string>GRID</string>
+         <string>FULL</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -7413,7 +7425,7 @@ border-radius: 10px 0px 10px 0px;</string>
         </property>
         <property name="icon">
          <iconset resource="Resources.qrc">
-          <normaloff>:/build/resources/images/White Icon/fillWhite.png</normaloff>:/build/resources/images/White Icon/fillWhite.png</iconset>
+          <normaloff>:/build/resources/images/White Icon/squareWhite.png</normaloff>:/build/resources/images/White Icon/squareWhite.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -7450,7 +7462,7 @@ border-radius: 10px 0px 10px 0px;</string>
         </property>
         <property name="icon">
          <iconset resource="Resources.qrc">
-          <normaloff>:/build/resources/images/White Icon/square_squareWhite.png</normaloff>:/build/resources/images/White Icon/square_squareWhite.png</iconset>
+          <normaloff>:/build/resources/images/White Icon/fillWhite.png</normaloff>:/build/resources/images/White Icon/fillWhite.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -7488,9 +7500,9 @@ border-radius: 10px 0px 10px 0px;</string>
      <widget class="QLabel" name="swipe_lbl_2">
       <property name="geometry">
        <rect>
-        <x>265</x>
+        <x>255</x>
         <y>380</y>
-        <width>251</width>
+        <width>291</width>
         <height>70</height>
        </rect>
       </property>
@@ -7536,7 +7548,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>45</x>
        <y>370</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7554,7 +7566,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>235</x>
        <y>370</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7572,7 +7584,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>430</x>
        <y>370</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7590,7 +7602,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>430</x>
        <y>210</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7608,7 +7620,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>45</x>
        <y>210</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7626,7 +7638,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <x>235</x>
        <y>210</y>
        <width>160</width>
-       <height>17</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -7890,24 +7902,6 @@ border-radius: 10px 0px 10px 0px;</string>
        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="elapsed_time_label">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>160</y>
-        <width>191</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>00h 00 min</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="print_finished_ok_btn">
       <property name="geometry">
        <rect>
@@ -7940,6 +7934,24 @@ color: rgb(255, 255, 255);
        <string>OK</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QLabel" name="elapsed_time_label">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>250</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>00h 00 min</string>
+     </property>
     </widget>
    </widget>
    <zorder>title_menu_widget</zorder>

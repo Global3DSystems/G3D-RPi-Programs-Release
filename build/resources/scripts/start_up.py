@@ -43,7 +43,7 @@ from PyQt5.uic import loadUi
 # Variable constants.
 TARGET_FILE_NAME = "G3D-RPi-Programs-Release-master.zip"
 TARGET_FOLDER_NAME = "G3D-RPi-Programs-Release-master"
-USERNAME = "pi" #getpass.getuser()
+USERNAME = "dietpi" #getpass.getuser()
 HOME_DIR = os.path.join("/home", USERNAME) #os.path.expanduser("~")
 DOWNLOADS_DIR = os.path.join(HOME_DIR, "Downloads") 
 USB_MOUNT_DIR = os.path.join("/media", USERNAME)
@@ -270,11 +270,15 @@ class MainWindow(QtWidgets.QMainWindow):
         return False
 
     def get_software_version(self, path):
-        with open(path, "r") as f:
-            data = f.read()
-            pattern = r"version *= *(.+)"
 
-            return re.findall(pattern, data)
+        if os.path.exists(path):
+            with open(path, "r") as f:
+                data = f.read()
+                pattern = r"version *= *(.+)"
+
+                return re.findall(pattern, data)
+        else:
+            return "NaN"
 
     def is_burn_in_avail(self):
         """

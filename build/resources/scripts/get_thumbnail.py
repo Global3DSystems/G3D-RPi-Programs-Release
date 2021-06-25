@@ -10,8 +10,12 @@ def main():
     # file_dir = "/home/roebin/Desktop/sample_usb_list/"
     # extract_dir = '/home/roebin/Desktop/G3D-RPi-Programs/build/resources/thumbnail/image/'
 
-    #deleting the thumbnail folder                
-    shutil.rmtree(extract_dir)
+    #deleting the thumbnail folder 
+    try:
+        shutil.rmtree(extract_dir)
+        print('Directory thumbnail is deleted')
+    except FileNotFoundError:
+        print('File is not found')
 
 
     try:
