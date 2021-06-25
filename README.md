@@ -1,20 +1,12 @@
+![G3D logo](documentation/images/g3d_logo.png)
+
 # G3D-RPi-Programs
+This is the public respository of the released version of programs 
+for G3D T2000 Printer in Raspberry Pi. It is used for updating the
+printer via USB update or over the air update.
 
-![G3D-Logo](/documentation/images/g3d_logo.png?raw=true)
+### How to Update via USB?
 
-### About
-This repository contains the rework for the 
-programs in Raspberry Pi for G3D T2000 Printer.
-
-<<<<<<< HEAD
-### Build using QtCreator
-* This is build using Qt 5.12 in QtCreator.
-* To build it, you need to download Qt Creator
-and Qt 5.12.
-* Build directory should be set as ***./build***
-and it should be in release mode, refer to the
-image below.
-=======
 * Download this repository by clicking the green "Code" button in the upper left
 section of this page then selecting "Download zip".
 * Format your flash drive as either FAT or exFAT. We haven't tested yet other file systems.
@@ -25,43 +17,23 @@ it may appear as "G3D-RPi-Programs-Release-master.zip(1)". File name must be exa
 * Restart the printer.
 * A prompt will be shown in the touch screen, select it will scan the version and you may choose to update via the latest version or downgrade it.
 * Wait for the update finish message to appear. Reboot is required to apply the updates.
->>>>>>> 602f2eff323476e5501093e0d00b99ae84cc9035
 
-![Build-Image](/documentation/images/build.png?raw=true)
+### How to Update via Over the Air?
 
-### Build using Ubuntu/RPi Terminal
-* First, navigate to the build folder of the repository. Example:
-* ```cd /home/pi/G3D-RPi-Programs/build``` 
-* Then, follow the rest of the command
-* ```qmake ../G3D-RPi-Programs.pro``` 
-* ```make clean```
-* ```make```
+* Using the touch screen, navigate to Settings->About->Update
+* Wait for the update window to show.
+* Click "Continue" button to check for updates.
+* Make sure you are connected to the internet. Navigate to Settings->Network and 
+swtitch to Wi-Fi mode/connect to a network.
+* Update will be downloaded if you have an internet connection, else it will stop.
+* After the update, a success message will be shown and will ask for reboot.
 
-### Build for Release in RPi
-* Clone this repository to /home/pi by running the following commands:
-* ```cd ~```
-* ```git clone https://github.com/Global3DSystems/G3D-RPi-Programs.git```
-* We need to rename the folder G3D-RPi-Programs to G3D-RPi-Programs-Release-master 
-because its what the USB/OTA update and script program expects to start/update
-the program. Use the command:
-* ```mv G3D-RPi-Programs G3D-RPi-Programs-Release-master```
-* Build it using the steps previously in the terminal.
-* Delete .cpp and .h files. (To update documentation to create a script to automate the proces of deleting and pushing it to the separate public update repository.)
- 
-### Development to Release Additional Build Steps
+### My updates failed, what to do?
 
-This step should always be done when shifting from development side to testing side in the actual printer with printer serial FW connected.
-* Change the USB path and serial port name to RPi compatible values in readwriteconfig.cpp
-* Comment the delay in ```PrintThread::run``` at the end of the loop since this is inserted for development purposes.
-* Replace ```show()``` by ```showFullScreen()``` in the ```PrintThread``` class for the ```projection_window``` variable.
-* Resize the ```projection_window``` variable to (1,1) in ```PrintThread``` class.
-* To summarize the step above, perform a Ctrl+Shift+F (search all) for "[DEV-NOTE]" string to find all the lines of code needed  for the steps above for shorcut. Comments are placed throughout the code.
-* Uncomment all the serial commands needed. This can be found also by performing a Ctrl+Shift+F (search all) for "[SERIAL COMMAND]" string.
-* Test the print in actual printer to see if it is properly configured.
-* Test all functionality sequence.
- 
-### Merge Conflicts
-* All ```.user``` and ```.user.random_number``` are
-automatically generated, just ignore the merge conflict,
-build it and if you are able to run it, you can pull/push
-it to the repository.
+* If the usb update has been interrupted due to power interruption, 
+you can simply update it again by just turning on the printer and the usb plugged in.
+* If the over the air download update has been interrupted due to power interruption,
+you can simply repeat the process again when printer turns on or update via USB.
+* If you cannot download updates due to slow connection, use USB update instead.
+Program won't allow downloads when you have less than 100 kbps download speed.
+* If download stucks, you probably have slow internet, consider using USB update only.
