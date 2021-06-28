@@ -1,6 +1,6 @@
-name=Random file name.g3d
-current-layer=1 / 8
-remaining-time=0 hr 5 min
-progress=12
+name=Shape-Box.g3d
+current-layer=8 / 8
+remaining-time=0 hr 0 min
+progress=100
 current_image_path=/files/mini_projection.png
 

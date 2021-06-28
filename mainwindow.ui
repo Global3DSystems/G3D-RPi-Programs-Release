@@ -7855,7 +7855,7 @@ border-radius: 10px 0px 10px 0px;</string>
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>90</y>
+       <y>60</y>
        <width>621</width>
        <height>301</height>
       </rect>
@@ -7864,7 +7864,7 @@ border-radius: 10px 0px 10px 0px;</string>
       <property name="geometry">
        <rect>
         <x>150</x>
-        <y>30</y>
+        <y>20</y>
         <width>321</width>
         <height>41</height>
        </rect>
@@ -7884,9 +7884,9 @@ border-radius: 10px 0px 10px 0px;</string>
      <widget class="QLabel" name="label_43">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>140</x>
         <y>160</y>
-        <width>171</width>
+        <width>151</width>
         <height>31</height>
        </rect>
       </property>
@@ -7899,7 +7899,7 @@ border-radius: 10px 0px 10px 0px;</string>
        <string>Elapsed Time: </string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
      <widget class="QPushButton" name="print_finished_ok_btn">
@@ -7934,24 +7934,102 @@ color: rgb(255, 255, 255);
        <string>OK</string>
       </property>
      </widget>
-    </widget>
-    <widget class="QLabel" name="elapsed_time_label">
-     <property name="geometry">
-      <rect>
-       <x>420</x>
-       <y>250</y>
-       <width>191</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>00h 00 min</string>
-     </property>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>File Name:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>120</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Settings:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="finished_filename_label">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>80</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Sample.g3d</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="finished_settings_label">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>120</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>60/3/4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="elapsed_time_label">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>160</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>00h 00 min</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <zorder>title_menu_widget</zorder>
