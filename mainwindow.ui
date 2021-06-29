@@ -8047,10 +8047,10 @@ color: rgb(255, 255, 255);
    <zorder>control_func_widget</zorder>
    <zorder>get_file_v2_widget</zorder>
    <zorder>print_finished_menu</zorder>
-   <zorder>button_widget</zorder>
    <zorder>info_message_widget</zorder>
-   <zorder>modify_curing_time_widget</zorder>
+   <zorder>button_widget</zorder>
    <zorder>manual_menu_widget</zorder>
+   <zorder>modify_curing_time_widget</zorder>
   </widget>
  </widget>
  <resources>
