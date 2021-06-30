@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-name=new.g3d
-current-layer=1 / 416
-remaining-time=1 hr 55 min
+name=...
+current-layer=...
+remaining-time=...
 progress=0
-=======
-name=new.g3d
-current-layer=1 / 416
-remaining-time=1 hr 55 min
-progress=0
->>>>>>> c3f0efd60455a1a5e327b033b95c906d506f9c72
-current_image_path=/files/mini_projection.png
+current_image_path=
 
