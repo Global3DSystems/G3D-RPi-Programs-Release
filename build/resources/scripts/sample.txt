@@ -1,9 +1,2 @@
-PLDTHOMEFIBR36684
-GlobeAtHome_A4DA4
-WorkWiFi
-ZTE_2.4G_vzf4J4
-PLDTHOMEFIBRjqVgd
-luhhh azah ka
-ZTE_5G_vzf4J4
-Gors Unlimited
-GlobeAtHome_CEDB8
+NetworkTest24GHz
+NetworkTest5GHz

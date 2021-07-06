@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>16000</width>
-    <height>1000</height>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -3419,7 +3419,7 @@ border-radius: 0px;</string>
       <string notr="true">color: rgb(41, 145, 208);</string>
      </property>
      <property name="text">
-      <string>G3D T2000 OS</string>
+      <string>G3D T2000</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3471,6 +3471,168 @@ border-radius: 0px;</string>
       <bool>false</bool>
      </property>
     </widget>
+    <widget class="QLineEdit" name="serial_num_textbox">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>90</y>
+       <width>201</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reset_button">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>290</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Proxima Nova</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-radius: 10px;
+	background-color: rgb(41, 145, 208);
+	color: rgb(238, 238, 236);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Reset to Default</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="about_popout_widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>205</x>
+       <y>60</y>
+       <width>391</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(211, 215, 207);</string>
+     </property>
+     <widget class="QPushButton" name="about_yes">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 10px;
+	background-color: rgb(41, 145, 208);
+	color: rgb(238, 238, 236);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>YES</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="about_no">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>120</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border-radius: 10px;
+	background-color: rgb(41, 145, 208);
+	color: rgb(238, 238, 236);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>NO</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Proxima Nova</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Are you sure you want to reset?</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QWidget" name="network_menu_widget" native="true">
     <property name="geometry">
@@ -3478,7 +3640,7 @@ border-radius: 0px;</string>
       <x>8800</x>
       <y>90</y>
       <width>800</width>
-      <height>2000</height>
+      <height>391</height>
      </rect>
     </property>
     <widget class="QLabel" name="label_14">
@@ -4037,7 +4199,7 @@ QGroupBox::title {
       <x>9600</x>
       <y>0</y>
       <width>800</width>
-      <height>1531</height>
+      <height>480</height>
      </rect>
     </property>
     <widget class="QLabel" name="label_28">
@@ -6731,7 +6893,7 @@ color: rgb(255, 255, 255);
       <string notr="true">color: rgb(41, 145, 208);</string>
      </property>
      <property name="text">
-      <string>INFO</string>
+      <string>ERROR</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -6740,8 +6902,8 @@ color: rgb(255, 255, 255);
     <widget class="QPushButton" name="close_info_button">
      <property name="geometry">
       <rect>
-       <x>600</x>
-       <y>410</y>
+       <x>330</x>
+       <y>400</y>
        <width>161</width>
        <height>51</height>
       </rect>
@@ -6772,9 +6934,9 @@ color: rgb(255, 255, 255);
     <widget class="QLabel" name="info_message_label">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>40</x>
        <y>90</y>
-       <width>711</width>
+       <width>721</width>
        <height>301</height>
       </rect>
      </property>
@@ -6787,7 +6949,7 @@ color: rgb(255, 255, 255);
       <string notr="true">border-width: 3px; 
 border-style: solid; 
 border-color: rgb(41, 145, 208);
-color: rgb(0,0,0);</string>
+color: rgb(255,255,255);</string>
      </property>
      <property name="text">
       <string>An error has occured.</string>
