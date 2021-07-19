@@ -365,20 +365,19 @@ input[type="text"] {
 }
 
 input[type="submit"], input[type="button"] {
-   display: inline-block;
+    display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.3em 0.3em 0;
     border-radius: 2em;
     box-sizing: border-box;
     text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     color: #FFFFFF;
     background-color: #2991d0;
     text-align: center;
     transition: all 0.2s;
-    cursor: pointer;
-    font-size: 20px;
+    cursor: pointer
 }
 
 
@@ -542,7 +541,7 @@ canvas {
     line-height: 16px
 }
 
-.modal, .modal-paragraph{
+.modal-paragraph{
     color: black;
 }
 

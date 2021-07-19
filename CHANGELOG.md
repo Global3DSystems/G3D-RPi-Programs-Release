@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 * Printer name identifier and network connection can be viewed on web top navigation bar.
 * UI changes in web app. Confirmation message boxes added on pause/resume/abort/connect to hotspot/connect to Wi-Fi.
 * Uncomplete update error notification when power interrupted via USB/OTA.
+* Fixed not synch touch ui and web ui on second print run.
 
 
 ### Version 2021.07.13
