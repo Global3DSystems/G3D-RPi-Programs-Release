@@ -542,7 +542,7 @@ canvas {
     line-height: 16px
 }
 
-.modal-paragraph{
+.modal, .modal-paragraph{
     color: black;
 }
 
@@ -554,12 +554,4 @@ a, a:hover, a:focus, a:active {
 
 .expand-anchor {
     display: block;
-}
-
-.modal-header {
-    background-color: rgb(178, 178, 178);
-}
-
-.modal-footer {
-    background-color: rgb(178, 178, 178);
 }

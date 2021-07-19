@@ -1,0 +1,4 @@
+NetworkTest24GHz
+NetworkTest5GHz
+ZTE_2.4G_vzf4J4
+GlobeAtHome_A4DA4

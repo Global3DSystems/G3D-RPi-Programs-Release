@@ -40,8 +40,8 @@
 
           <div class="row printing-box" style="float: right;">
                   
-            <input type="button" data-toggle="modal" data-target="#pauseModal" value="PAUSE/RESUME">
-            <input type="button" data-toggle="modal" data-target="#abortModal" value="ABORT">
+            <input type="button" class="btn shadow-none" data-toggle="modal" data-target="#pauseModal" value="PAUSE">
+            <input type="button" class="btn shadow-none" data-toggle="modal" data-target="#abortModal" value="ABORT">
                  
           </div>
 
@@ -64,8 +64,8 @@
               <div class="modal-footer">
 
                 <form action="/printing" method="POST">
-                  <input type="submit" method="post" id="print-pause-btn" name="print-pause-btn" value="YES" onclick="pause_resume_clicked()">
-                  <input type="button" name="cancel-pause-btn" value="NO" onclick="no_clicked()"">
+                  <input type="submit" class="btn shadow-none" method="post" id="print-pause-btn" name="print-pause-btn" value="YES" onclick="pause_resume_clicked()">
+                  <input type="button" class="btn shadow-none" name="cancel-pause-btn" value="NO" onclick="no_clicked()"">
                 </form>
 
               </div>
@@ -93,8 +93,8 @@
               <div class="modal-footer">
 
                 <form action="/printing" method="POST">
-                  <input type="submit" method="post" id="print-abort-btn "name="print-abort-btn" value="YES" onclick="abort_clicked()">
-                  <input type="button" name="cancel-abort-btn" value="NO" onclick="no_clicked()">
+                  <input type="submit" class="btn shadow-none" method="post" id="print-abort-btn "name="print-abort-btn" value="YES" onclick="abort_clicked()">
+                  <input type="button" class="btn shadow-none" name="cancel-abort-btn" value="NO" onclick="no_clicked()">
                 </form>
 
               </div>
