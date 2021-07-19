@@ -4,35 +4,45 @@
 
     <div class="container">
 
-      <div class="col title-upload">
+      <h1>Upload or Load USB Files</h1>
+      <br>
 
-        <h1>Select a File to Print</h1>
-        <br>
+      <div class="row">
 
-        <form class="uploading-file" enctype="multipart/form-data" method="post" action="/printinfo"
-          accept-charset="utf-8">
+        <div class="col-sm title-upload">
 
-          <label class="choose-file">
-            Upload
-            <input type="file" id="myFile" name="filename" accept=".g3d" class="file-upload" style="display:none">
+          <form class="uploading-file" enctype="multipart/form-data" method="post" action="/printinfo"
+            accept-charset="utf-8" style="display: inline;">
+
+            <label class="choose-file">
+              Upload
+              <input type="file" id="myFile" name="filename" accept=".g3d" class="file-upload" style="display:none">
+            </label>
+
+
+            <input id="uploadFile" placeholder="No File" disabled="disabled" hidden />
+
+            <label class="submit-file" hidden>
+              Hidden
+              <div id="file-upload-filename"></div>
+              <input type="submit" class="btn-print" style="display:none">
+            </label>
+
+          </form>
+
+          <label class="choose-file mt-2">
+            <a class="expand-anchor" href="/filepage" class="file-upload">Load USB Files</a>
           </label>
 
-          <input id="uploadFile" placeholder="No File" disabled="disabled" hidden />
+        </div>
 
-          <label class="submit-file" hidden>
-            Hidden
-            <div id="file-upload-filename"></div>
-            <input type="submit" class="btn-print" style="display:none">
-          </label>
-
-        </form>
 
       </div>
 
     </div>
 
   </div>
-
+</div>
 </div>
 
 
@@ -45,5 +55,4 @@
     document.getElementById("uploadFile").value = this.value;
     document.getElementById("file-upload-filename").click()
   };
-
 </script>

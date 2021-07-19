@@ -65,6 +65,7 @@ SOURCES       = ../QtWebApp/QtWebApp/httpserver/httpglobal.cpp \
 		../QtWebApp/QtWebApp/templateengine/templateloader.cpp \
 		../QtWebApp/QtWebApp/templateengine/templatecache.cpp \
 		../controlpagecontroller.cpp \
+		../filepagecontroller.cpp \
 		../global.cpp \
 		../main.cpp \
 		../mainwindow.cpp \
@@ -111,6 +112,7 @@ OBJECTS       = httpglobal.o \
 		templateloader.o \
 		templatecache.o \
 		controlpagecontroller.o \
+		filepagecontroller.o \
 		global.o \
 		main.o \
 		mainwindow.o \
@@ -758,6 +760,7 @@ DIST          = resources/images/Back \
 		../QtWebApp/QtWebApp/templateengine/templateloader.h \
 		../QtWebApp/QtWebApp/templateengine/templatecache.h \
 		../controlpagecontroller.h \
+		../filepagecontroller.h \
 		../global.h \
 		../mainwindow.h \
 		../networkconfiguration.h \
@@ -786,6 +789,7 @@ DIST          = resources/images/Back \
 		../QtWebApp/QtWebApp/templateengine/templateloader.cpp \
 		../QtWebApp/QtWebApp/templateengine/templatecache.cpp \
 		../controlpagecontroller.cpp \
+		../filepagecontroller.cpp \
 		../global.cpp \
 		../main.cpp \
 		../mainwindow.cpp \
@@ -997,8 +1001,8 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Resources.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../QtWebApp/QtWebApp/httpserver/httpglobal.h ../QtWebApp/QtWebApp/httpserver/httplistener.h ../QtWebApp/QtWebApp/httpserver/httpconnectionhandler.h ../QtWebApp/QtWebApp/httpserver/httpconnectionhandlerpool.h ../QtWebApp/QtWebApp/httpserver/httprequest.h ../QtWebApp/QtWebApp/httpserver/httpresponse.h ../QtWebApp/QtWebApp/httpserver/httpcookie.h ../QtWebApp/QtWebApp/httpserver/httprequesthandler.h ../QtWebApp/QtWebApp/httpserver/httpsession.h ../QtWebApp/QtWebApp/httpserver/httpsessionstore.h ../QtWebApp/QtWebApp/httpserver/staticfilecontroller.h ../QtWebApp/QtWebApp/templateengine/templateglobal.h ../QtWebApp/QtWebApp/templateengine/template.h ../QtWebApp/QtWebApp/templateengine/templateloader.h ../QtWebApp/QtWebApp/templateengine/templatecache.h ../controlpagecontroller.h ../global.h ../mainwindow.h ../networkconfiguration.h ../printerserial.h ../printinfocontroller.h ../printinfoslice.h ../printingcontroller.h ../printpagecontroller.h ../projectionwindow.h ../readwriteconfig.h ../requestmapper.h ../settingspagecontroller.h ../usb.h ../colortheme.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../QtWebApp/QtWebApp/httpserver/httpglobal.cpp ../QtWebApp/QtWebApp/httpserver/httplistener.cpp ../QtWebApp/QtWebApp/httpserver/httpconnectionhandler.cpp ../QtWebApp/QtWebApp/httpserver/httpconnectionhandlerpool.cpp ../QtWebApp/QtWebApp/httpserver/httprequest.cpp ../QtWebApp/QtWebApp/httpserver/httpresponse.cpp ../QtWebApp/QtWebApp/httpserver/httpcookie.cpp ../QtWebApp/QtWebApp/httpserver/httprequesthandler.cpp ../QtWebApp/QtWebApp/httpserver/httpsession.cpp ../QtWebApp/QtWebApp/httpserver/httpsessionstore.cpp ../QtWebApp/QtWebApp/httpserver/staticfilecontroller.cpp ../QtWebApp/QtWebApp/templateengine/template.cpp ../QtWebApp/QtWebApp/templateengine/templateloader.cpp ../QtWebApp/QtWebApp/templateengine/templatecache.cpp ../controlpagecontroller.cpp ../global.cpp ../main.cpp ../mainwindow.cpp ../networkconfiguration.cpp ../printerserial.cpp ../printinfocontroller.cpp ../printinfoslice.cpp ../printingcontroller.cpp ../printpagecontroller.cpp ../projectionwindow.cpp ../readwriteconfig.cpp ../requestmapper.cpp ../settingspagecontroller.cpp ../usb.cpp ../colortheme.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../QtWebApp/QtWebApp/httpserver/httpglobal.h ../QtWebApp/QtWebApp/httpserver/httplistener.h ../QtWebApp/QtWebApp/httpserver/httpconnectionhandler.h ../QtWebApp/QtWebApp/httpserver/httpconnectionhandlerpool.h ../QtWebApp/QtWebApp/httpserver/httprequest.h ../QtWebApp/QtWebApp/httpserver/httpresponse.h ../QtWebApp/QtWebApp/httpserver/httpcookie.h ../QtWebApp/QtWebApp/httpserver/httprequesthandler.h ../QtWebApp/QtWebApp/httpserver/httpsession.h ../QtWebApp/QtWebApp/httpserver/httpsessionstore.h ../QtWebApp/QtWebApp/httpserver/staticfilecontroller.h ../QtWebApp/QtWebApp/templateengine/templateglobal.h ../QtWebApp/QtWebApp/templateengine/template.h ../QtWebApp/QtWebApp/templateengine/templateloader.h ../QtWebApp/QtWebApp/templateengine/templatecache.h ../controlpagecontroller.h ../filepagecontroller.h ../global.h ../mainwindow.h ../networkconfiguration.h ../printerserial.h ../printinfocontroller.h ../printinfoslice.h ../printingcontroller.h ../printpagecontroller.h ../projectionwindow.h ../readwriteconfig.h ../requestmapper.h ../settingspagecontroller.h ../usb.h ../colortheme.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../QtWebApp/QtWebApp/httpserver/httpglobal.cpp ../QtWebApp/QtWebApp/httpserver/httplistener.cpp ../QtWebApp/QtWebApp/httpserver/httpconnectionhandler.cpp ../QtWebApp/QtWebApp/httpserver/httpconnectionhandlerpool.cpp ../QtWebApp/QtWebApp/httpserver/httprequest.cpp ../QtWebApp/QtWebApp/httpserver/httpresponse.cpp ../QtWebApp/QtWebApp/httpserver/httpcookie.cpp ../QtWebApp/QtWebApp/httpserver/httprequesthandler.cpp ../QtWebApp/QtWebApp/httpserver/httpsession.cpp ../QtWebApp/QtWebApp/httpserver/httpsessionstore.cpp ../QtWebApp/QtWebApp/httpserver/staticfilecontroller.cpp ../QtWebApp/QtWebApp/templateengine/template.cpp ../QtWebApp/QtWebApp/templateengine/templateloader.cpp ../QtWebApp/QtWebApp/templateengine/templatecache.cpp ../controlpagecontroller.cpp ../filepagecontroller.cpp ../global.cpp ../main.cpp ../mainwindow.cpp ../networkconfiguration.cpp ../printerserial.cpp ../printinfocontroller.cpp ../printinfoslice.cpp ../printingcontroller.cpp ../printpagecontroller.cpp ../projectionwindow.cpp ../readwriteconfig.cpp ../requestmapper.cpp ../settingspagecontroller.cpp ../usb.cpp ../colortheme.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../mainwindow.ui ../projectionwindow.ui $(DISTDIR)/
 
 
@@ -1190,6 +1194,7 @@ moc_requestmapper.cpp: ../QtWebApp/QtWebApp/httpserver/httprequesthandler.h \
 		../QtWebApp/QtWebApp/templateengine/template.h \
 		../QtWebApp/QtWebApp/templateengine/templateglobal.h \
 		../printingcontroller.h \
+		../filepagecontroller.h \
 		../requestmapper.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
@@ -1340,6 +1345,30 @@ controlpagecontroller.o: ../controlpagecontroller.cpp ../controlpagecontroller.h
 		../networkconfiguration.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o controlpagecontroller.o ../controlpagecontroller.cpp
 
+filepagecontroller.o: ../filepagecontroller.cpp ../filepagecontroller.h \
+		../QtWebApp/QtWebApp/httpserver/httprequesthandler.h \
+		../QtWebApp/QtWebApp/httpserver/httpglobal.h \
+		../QtWebApp/QtWebApp/httpserver/httprequest.h \
+		../QtWebApp/QtWebApp/httpserver/httpresponse.h \
+		../QtWebApp/QtWebApp/httpserver/httpcookie.h \
+		../QtWebApp/QtWebApp/templateengine/template.h \
+		../QtWebApp/QtWebApp/templateengine/templateglobal.h \
+		../global.h \
+		../QtWebApp/QtWebApp/httpserver/httpsessionstore.h \
+		../QtWebApp/QtWebApp/httpserver/httpsession.h \
+		../QtWebApp/QtWebApp/httpserver/staticfilecontroller.h \
+		../QtWebApp/QtWebApp/templateengine/templatecache.h \
+		../QtWebApp/QtWebApp/templateengine/templateloader.h \
+		../mainwindow.h \
+		../readwriteconfig.h \
+		../colortheme.h \
+		../usb.h \
+		../printinfoslice.h \
+		../projectionwindow.h \
+		../printerserial.h \
+		../networkconfiguration.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o filepagecontroller.o ../filepagecontroller.cpp
+
 global.o: ../global.cpp ../global.h \
 		../QtWebApp/QtWebApp/httpserver/httpsessionstore.h \
 		../QtWebApp/QtWebApp/httpserver/httpglobal.h \
@@ -1387,6 +1416,7 @@ main.o: ../main.cpp ../mainwindow.h \
 		../QtWebApp/QtWebApp/templateengine/template.h \
 		../QtWebApp/QtWebApp/templateengine/templateglobal.h \
 		../printingcontroller.h \
+		../filepagecontroller.h \
 		../global.h \
 		../QtWebApp/QtWebApp/httpserver/httpsessionstore.h \
 		../QtWebApp/QtWebApp/httpserver/httpsession.h \
@@ -1529,6 +1559,7 @@ requestmapper.o: ../requestmapper.cpp ../requestmapper.h \
 		../QtWebApp/QtWebApp/templateengine/template.h \
 		../QtWebApp/QtWebApp/templateengine/templateglobal.h \
 		../printingcontroller.h \
+		../filepagecontroller.h \
 		../global.h \
 		../QtWebApp/QtWebApp/httpserver/httpsessionstore.h \
 		../QtWebApp/QtWebApp/httpserver/httpsession.h \

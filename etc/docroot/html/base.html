@@ -13,13 +13,30 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="/css/main.css">
-    <title>G3D T2000</title>
+    <title>{printer_web_title}</title>
+
+    <!-- Script to prevent form resubmissions -->
+    <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
+    </script>
+    
 </head>
 
 
 
 <body>
-    <!-- Navigation -->
+    <!-- Small Navigation Bar for Printer Name and Network Mode -->
+    <nav class="navbar navbar-default navbar-xs" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <p class="navbar-brand nav-printer-name">Printer Name: {printer_name}</p>
+          <p class="navbar-brand nav-network-mode">Network Mode: {network_mode}</p>
+        </div>
+    </nav>
+    
+     <!-- Main Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="/print">
@@ -48,7 +65,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Block contents -->
 
     {block_contents}

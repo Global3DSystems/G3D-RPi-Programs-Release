@@ -159,7 +159,15 @@ class MainWindow(QtWidgets.QMainWindow):
                 current_version = self.get_software_version(CURRENT_PROFRAM_CONFIG_PATH)
                 print("[DEBUG] Running program version: {}".format(current_version))
                 self.hide()
-                subprocess.run([PROGRAM_EXECUTABLE])
+
+                result = subprocess.run([PROGRAM_EXECUTABLE])
+
+                if result.returncode != 0:
+                    self.message_label.resize(701, 320)
+                    self.title_label.setText("Error")
+                    self.update_message_with_delay("Program crashed.\n\nIf you updated this previously and was interrupted,\nturn off the printer then plug a USB update to solve this.")
+                    self.showFullScreen()
+
 
             else:
                 self.message_label.resize(701, 320)
@@ -380,8 +388,13 @@ if __name__ == "__main__":
     # If update file is avail, show the UI
     # so user can navigate updating.
     if w.is_usb_update_present():
-        print("[DEBUG] Update file found.")
-        w.showFullScreen()
+
+        try:
+            print("[DEBUG] Update file found.")
+            w.showFullScreen()
+        except:
+            w.start_program()
+        
         
     # If cloud downloaded update is present, we replace
     # the old one in home.
@@ -394,21 +407,24 @@ if __name__ == "__main__":
     
     elif os.path.exists("/home/pi/Downloads/G3D-RPi-Programs-Release-master"):
 
-        w.cloud_update_apply()
-        w.showFullScreen()
+        try:
+            w.cloud_update_apply()
+            w.showFullScreen()
 
-        app.processEvents()
+            app.processEvents()
 
-        time.sleep(5)
+            time.sleep(5)
 
-        app.processEvents()
-    
-        shutil.rmtree("/home/pi/G3D-RPi-Programs-Release-master", ignore_errors = True)
+            app.processEvents()
+        
+            shutil.rmtree("/home/pi/G3D-RPi-Programs-Release-master", ignore_errors = True)
 
-        shutil.copytree("/home/pi/Downloads/G3D-RPi-Programs-Release-master",
-                        "/home/pi/G3D-RPi-Programs-Release-master")
+            shutil.copytree("/home/pi/Downloads/G3D-RPi-Programs-Release-master",
+                            "/home/pi/G3D-RPi-Programs-Release-master")
 
-        shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release-master")
+            shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release-master")
+        except:
+            pass
 
         w.start_program()
         

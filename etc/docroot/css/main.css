@@ -19,8 +19,9 @@ form {
 }
 
 
-html, body {
- 
+html,
+body {
+
     font-family: 'Questrial', sans-serif;
     background-color: #10111c;
     height: 100%;
@@ -29,7 +30,7 @@ html, body {
 h1 {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     background: none;
 }
@@ -37,9 +38,9 @@ h1 {
 h2 {
     margin-left: 20px;
     margin-right: 20px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
- 
+
 h5 {
     font-family: 'Questrial', sans-serif;
     color: #747474;
@@ -55,12 +56,13 @@ p {
 
 
 
-.btn {
+/*.btn {
     position: fixed;
     margin-top: 600px;
     margin-left: 1000px;
 
-}
+} */
+
 a:hover {
     font-weight: bold;
 }
@@ -126,13 +128,14 @@ a.print-btn:hover {
     box-sizing: border-box;
     text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: normal;
     color: #FFFFFF;
     background-color: #2991d0;
     text-align: center;
     transition: all 0.2s;
     cursor: pointer;
     font-size: 25px;
+    width: 60%;
 }
 
 .choose-file:hover {
@@ -227,7 +230,7 @@ input[type="text"] {
     display: block;
 }
 
-.image-control-item > img {
+.image-control-item>img {
     width: 75px;
     height: 75px;
 }
@@ -237,7 +240,7 @@ input[type="text"] {
 
 }
 
-.image-printinfo-item > img {
+.image-printinfo-item>img {
     width: 75px;
     height: 75px;
     position: absolute;
@@ -264,10 +267,12 @@ input[type="text"] {
     margin: 10px;
     padding: 10px;
 }
+
 .printinfo-page {
     text-align: center;
     margin: 0 auto;
 }
+
 .printinfo-box {
     margin: 10px;
     padding: 10px;
@@ -359,7 +364,35 @@ input[type="text"] {
     display: block;
 }
 
-input[type=submit] {
+input[type="submit"], input[type="button"] {
+   display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    background-color: #2991d0;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+input:hover[type="submit"], .custom-button {
+    background-color: #4095c6;
+}
+
+input:active[type="submit"], .custom-button {
+    background-color: #4095c6;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input[type=button] {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.3em 0.3em 0;
@@ -375,25 +408,28 @@ input[type=submit] {
     cursor: pointer
 }
 
-input:hover[type="submit"] {
-    background-color:#4095c6;
+input:hover[type="button"] {
+    background-color: #4095c6;
 }
 
-input:active[type="submit"] {
+input:active[type="button"] {
     background-color: #4095c6;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+
 .choose-file:hover {
-    background-color:#4095c6;
+    background-color: #4095c6;
 }
 
-.move-z-section img { 
+.move-z-section img {
     float: left;
     width: 61px;
     height: 59px;
     margin-top: -40px;
 }
+
 .move-tilt-section img {
     float: left;
     width: 61px;
@@ -444,18 +480,86 @@ canvas {
     float: left;
     max-width: 100%;
     height: auto;
-  }
-  @media screen and (max-width: 640px){
+}
+
+@media screen and (max-width: 640px) {
     .header-logo img {
-    width:50%!important;
-    margin:auto;
-    padding:auto;
+        width: 50% !important;
+        margin: auto;
+        padding: auto;
     }
-    }
-  
-  .header-logo h1 {
+}
+
+.header-logo h1 {
     position: relative;
     top: 18px;
     left: 10px;
-  }
-  
+}
+
+.select-box {
+    text-align: center;
+}
+
+.nav-printer-name {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline;
+}
+
+.nav-network-mode {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline;
+
+}
+
+.navbar-xs {
+    min-height: 22px;
+    border-radius: 0;
+    border-bottom: 1px solid #AAAAAA
+}
+
+.navbar-xs .navbar-brand {
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.navbar-xs .navbar-nav>li>a {
+    border-right: 1px solid #ddd;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 16px
+}
+
+.modal-paragraph{
+    color: black;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+}
+
+.expand-anchor {
+    display: block;
+}
+
+.modal-header {
+    background-color: rgb(178, 178, 178);
+}
+
+.modal-footer {
+    background-color: rgb(178, 178, 178);
+}

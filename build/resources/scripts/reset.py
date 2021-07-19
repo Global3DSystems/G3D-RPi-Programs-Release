@@ -38,7 +38,7 @@ def set_default_hotspot():
     print("Default ssid: {}".format(default_ssid))
     print("Default password: {}".format(default_pass))
 
-    subprocess.run([config_network_script_path, "hotspot", default_ssid, default_pass])
+    subprocess.run(["sudo", "python3", config_network_script_path, "hotspot", default_ssid, default_pass])
 
 def read_config(path, key):
 

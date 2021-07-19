@@ -1,6 +1,5 @@
-name=Cal house 120z.g3d
-current-layer=7 / 274
-remaining-time=1 hr 18 min
-progress=2
-current_image_path=/files/mini_projection.png
-
+name=...
+current-layer=...
+remaining-time=...
+progress=0
+current_image_path=

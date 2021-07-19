@@ -21,6 +21,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     controlpagecontroller.cpp \
+    filepagecontroller.cpp \
     global.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -39,6 +40,7 @@ SOURCES += \
 
 HEADERS += \
     controlpagecontroller.h \
+    filepagecontroller.h \
     global.h \
     mainwindow.h \
     networkconfiguration.h \
