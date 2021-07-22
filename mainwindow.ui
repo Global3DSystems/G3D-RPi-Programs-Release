@@ -3770,7 +3770,7 @@ QGroupBox::title {
         <x>10</x>
         <y>30</y>
         <width>701</width>
-        <height>201</height>
+        <height>171</height>
        </rect>
       </property>
       <property name="font">
@@ -3794,14 +3794,15 @@ color: white;
       <property name="geometry">
        <rect>
         <x>532</x>
-        <y>240</y>
+        <y>230</y>
         <width>171</width>
         <height>51</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Proxima Nova</family>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="focusPolicy">
@@ -3815,7 +3816,7 @@ color: white;
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>280</y>
+        <y>240</y>
         <width>121</width>
         <height>20</height>
        </rect>
@@ -3827,14 +3828,14 @@ color: white;
        </font>
       </property>
       <property name="text">
-       <string>IP Address:</string>
+       <string>Wi-Fi IP:</string>
       </property>
      </widget>
      <widget class="QLabel" name="network_wifi_address_label">
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>280</y>
+        <y>240</y>
         <width>291</width>
         <height>21</height>
        </rect>
@@ -3853,7 +3854,7 @@ color: white;
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>245</y>
+        <y>215</y>
         <width>151</width>
         <height>20</height>
        </rect>
@@ -3872,7 +3873,7 @@ color: white;
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>245</y>
+        <y>215</y>
         <width>291</width>
         <height>21</height>
        </rect>
@@ -3948,7 +3949,7 @@ Printer will reboot upon clicking the button.</string>
       <property name="geometry">
        <rect>
         <x>572</x>
-        <y>240</y>
+        <y>230</y>
         <width>131</width>
         <height>51</height>
        </rect>
@@ -3966,6 +3967,8 @@ Printer will reboot upon clicking the button.</string>
        <string>RESET</string>
       </property>
      </widget>
+     <zorder>network_reset_button</zorder>
+     <zorder>label_24</zorder>
     </widget>
     <widget class="QGroupBox" name="hotspot_info_groupbox">
      <property name="geometry">
@@ -4003,15 +4006,15 @@ QGroupBox::title {
       <property name="geometry">
        <rect>
         <x>532</x>
-        <y>240</y>
+        <y>230</y>
         <width>171</width>
         <height>51</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Proxima Nova</family>
-        <pointsize>14</pointsize>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
        </font>
       </property>
       <property name="focusPolicy">
@@ -4113,7 +4116,7 @@ QGroupBox::title {
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>280</y>
+        <y>240</y>
         <width>281</width>
         <height>21</height>
        </rect>
@@ -4132,7 +4135,7 @@ QGroupBox::title {
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>280</y>
+        <y>240</y>
         <width>121</width>
         <height>20</height>
        </rect>
@@ -4144,14 +4147,14 @@ QGroupBox::title {
        </font>
       </property>
       <property name="text">
-       <string>IP Address:</string>
+       <string>Hotspot IP:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_32">
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>245</y>
+        <y>215</y>
         <width>121</width>
         <height>20</height>
        </rect>
@@ -4170,7 +4173,7 @@ QGroupBox::title {
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>245</y>
+        <y>215</y>
         <width>271</width>
         <height>21</height>
        </rect>
@@ -4186,12 +4189,52 @@ QGroupBox::title {
       </property>
      </widget>
     </widget>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>314</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Proxima Nova</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>LAN IP:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lan_address_label">
+     <property name="geometry">
+      <rect>
+       <x>254</x>
+       <y>314</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Proxima Nova</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Disconnected</string>
+     </property>
+    </widget>
     <zorder>network_conflict_groupbox</zorder>
     <zorder>hotspot_info_groupbox</zorder>
+    <zorder>wif_list_groupbox</zorder>
     <zorder>label_14</zorder>
     <zorder>horizontalSlider</zorder>
     <zorder>label_15</zorder>
-    <zorder>wif_list_groupbox</zorder>
+    <zorder>label_46</zorder>
+    <zorder>lan_address_label</zorder>
    </widget>
    <widget class="QWidget" name="edit_network_widget" native="true">
     <property name="geometry">

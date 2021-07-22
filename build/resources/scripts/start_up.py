@@ -273,6 +273,9 @@ class MainWindow(QtWidgets.QMainWindow):
                 continue
             
             if TARGET_FILE_NAME in os.listdir(dir_to_scan_full_path):
+
+                # If USB update is present, delete the downloaded cloud update.
+                shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release-master", ignore_errors = True)
                 return True
             
         return False
