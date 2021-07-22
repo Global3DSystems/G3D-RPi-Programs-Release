@@ -2,7 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ### Version 2021.07.22
-* Added LAN IP display both in touch screen and web application
+* Added LAN IP display both in touch screen and web application.
+* Fixed web app not redirecting from usb list while printing.
 
 ### Version 2021.07.19
 * USB files can now be accessed in the web app. You can now print in the web app and choose files from the plugged USB.

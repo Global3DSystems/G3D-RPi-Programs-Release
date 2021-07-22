@@ -276,6 +276,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
                 # If USB update is present, delete the downloaded cloud update.
                 shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release-master", ignore_errors = True)
+                shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release", ignore_errors = True)
+                
                 return True
             
         return False
