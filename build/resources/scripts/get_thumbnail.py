@@ -41,7 +41,6 @@ def main():
                 except:
                     print("error in extracting a given file")
 
-
     try:
         thumb_usb_dir = file_dir + 'thumbnail/'
         shutil.rmtree(thumb_usb_dir)
@@ -49,7 +48,7 @@ def main():
     except FileNotFoundError:
         print("File not found")
 
-    
+ 
 
 try:
     main()
