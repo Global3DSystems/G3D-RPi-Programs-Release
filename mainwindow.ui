@@ -5766,7 +5766,7 @@ color: rgb(245, 245, 245);
        <rect>
         <x>468</x>
         <y>50</y>
-        <width>60</width>
+        <width>62</width>
         <height>55</height>
        </rect>
       </property>
@@ -6726,9 +6726,9 @@ color: rgb(245, 245, 245);
     <widget class="QPushButton" name="del_button">
      <property name="geometry">
       <rect>
-       <x>630</x>
+       <x>703</x>
        <y>340</y>
-       <width>121</width>
+       <width>61</width>
        <height>55</height>
       </rect>
      </property>

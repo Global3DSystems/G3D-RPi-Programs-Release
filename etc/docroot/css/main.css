@@ -235,16 +235,27 @@ input[type="text"] {
     height: 75px;
 }
 
+
 .image-printinfo-item {
     display: block;
 
 }
+
 
 .image-printinfo-item>img {
     width: 75px;
     height: 75px;
     position: absolute;
     display: block;
+}
+
+@media screen and (max-width: 425px) {
+    .image-printinfo-item img {
+        width: 75px !important;
+        margin: auto;
+        padding: auto;
+        position: relative;
+    }
 }
 
 .image-printing-item {
